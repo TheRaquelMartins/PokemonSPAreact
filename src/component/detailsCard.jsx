@@ -1,8 +1,7 @@
 import React from 'react';
 import CharacterCard from './characterCard';
 
-const styleCharacterDetails = {
-    flex: '30%',
+const styleCharacterDetails = {     
     padding: '1vw',
     justifyContent: 'center'
 };

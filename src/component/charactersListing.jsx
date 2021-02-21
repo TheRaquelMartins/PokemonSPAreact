@@ -4,7 +4,6 @@ import CharacterCard from './characterCard';
 const styleCharactersList = {
     flexDirection: 'flex',
     textAlign: 'center',
-
     justifyContent: 'space-evenly'
 };
 

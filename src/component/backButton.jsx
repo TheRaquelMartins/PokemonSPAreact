@@ -9,7 +9,7 @@ const styleBackButton = {
 
 const BackButton = ({ onClick }) => (
     <div>
-        <img style={styleBackButton} onClick={onClick} src='../resources/backbutton.png'></img>
+        <img style={styleBackButton} onClick={onClick} src='../../resources/backbutton.png'></img>
     </div>
 );
 
