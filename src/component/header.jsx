@@ -1,5 +1,7 @@
 import React from 'react';
 import SearchBar from './searchBar';
+import HeaderImage from '../resources/header.jpg';
+import HomeButton from '../resources/home.png';
 
 const styleOfMainDiv = {
     display: 'flex',
@@ -30,8 +32,8 @@ const styleTitle = {
 
 const Header = ({ onClick, onSearch }) => (
     <div style={styleOfMainDiv}>
-        <img style={stylePageHeader} src='../../resources/header.jpg' ></img>
-        <img style={styleHomeButton} onClick={onClick} src='../../resources/home.png' ></img>
+        <img style={stylePageHeader} src={HeaderImage} ></img>
+        <img style={styleHomeButton} onClick={onClick} src={HomeButton} ></img>
         <div style={styleTitle}>Search them all</div>
         <SearchBar placeholder="Search by name..." onSearch={onSearch} ></SearchBar>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import BackButtonImage from '../resources/backbutton.png';
 
 const styleBackButton = {
     position: 'absolute',
@@ -9,7 +10,7 @@ const styleBackButton = {
 
 const BackButton = ({ onClick }) => (
     <div>
-        <img style={styleBackButton} onClick={onClick} src='../../resources/backbutton.png'></img>
+        <img style={styleBackButton} onClick={onClick} src={BackButtonImage}></img>
     </div>
 );
 

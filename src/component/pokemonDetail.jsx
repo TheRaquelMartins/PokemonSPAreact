@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Col, Row } from 'react-bootstrap';
 import CharacterDetails from './characterDetails';
 import DetailsCard from './detailsCard';
 import ItemDetails from './itemDetails';
@@ -16,23 +17,32 @@ const styleDetailBody = {
 export default function PokemonDetail({ pokemonDetail, pokemonWeakness, pokemonAttacks, onClick }) {
 
     return (
-        <div>
-            <div style={styleDetailBody}>
-                <DetailsCard pokemon={pokemonDetail} />
+<Container fluid >
 
+<Container fluid>
+            <Row style={styleDetailBody} >   
+                <Col>
+                    <DetailsCard pokemon={pokemonDetail} />
+                </Col>
+                <Col lg={8}>
                     { pokemonDetail.supertype != "Pokémon" ?
                         
                         <ItemDetails pokemonDetail={pokemonDetail} /> :
-
+                        
                         < CharacterDetails
-                            pokemonDetail={pokemonDetail}
-                            pokemonAttacks={pokemonAttacks}
-                            pokemonWeakness={pokemonWeakness} />
+                        pokemonDetail={pokemonDetail}
+                        pokemonAttacks={pokemonAttacks}
+                        pokemonWeakness={pokemonWeakness} />
                     }
-               
-            </div>
+                </Col>
+            </Row>
 
-            <BackButton onClick={onClick}></BackButton>
-        </div>
+
+        </Container>
+            <Row>
+                <BackButton onClick={onClick}></BackButton>
+            </Row>
+            
+                    </Container>
     );
 };

@@ -2,7 +2,6 @@ import React from 'react';
 
 const styleDetails = {
     padding: '1vw',
-    flex: '70%'
 };
 
 export default function CharacterDetails({ pokemonDetail }) {
