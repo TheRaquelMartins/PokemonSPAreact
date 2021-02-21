@@ -17,32 +17,31 @@ const styleDetailBody = {
 export default function PokemonDetail({ pokemonDetail, pokemonWeakness, pokemonAttacks, onClick }) {
 
     return (
-<Container fluid >
+        <Container fluid >
+            <Container fluid>
+                <Row style={styleDetailBody} >
+                    
+                    <Col>
+                        <DetailsCard pokemon={pokemonDetail} />
+                    </Col>
 
-<Container fluid>
-            <Row style={styleDetailBody} >   
-                <Col>
-                    <DetailsCard pokemon={pokemonDetail} />
-                </Col>
-                <Col lg={8}>
-                    { pokemonDetail.supertype != "Pokémon" ?
-                        
-                        <ItemDetails pokemonDetail={pokemonDetail} /> :
-                        
-                        < CharacterDetails
-                        pokemonDetail={pokemonDetail}
-                        pokemonAttacks={pokemonAttacks}
-                        pokemonWeakness={pokemonWeakness} />
-                    }
-                </Col>
-            </Row>
+                    <Col lg={8}>
+                        {pokemonDetail.supertype != "Pokémon" ?
 
+                            <ItemDetails pokemonDetail={pokemonDetail} /> :
 
-        </Container>
+                            < CharacterDetails
+                                pokemonDetail={pokemonDetail}
+                                pokemonAttacks={pokemonAttacks}
+                                pokemonWeakness={pokemonWeakness} />
+                        }
+                    </Col>
+                </Row>
+            </Container>
+
             <Row>
                 <BackButton onClick={onClick}></BackButton>
             </Row>
-            
-                    </Container>
+        </Container>
     );
 };
