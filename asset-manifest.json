@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/PokemonSPAreact/static/js/main.c4ffc501.chunk.js",
+    "main.js.map": "/PokemonSPAreact/static/js/main.c4ffc501.chunk.js.map",
+    "runtime-main.js": "/PokemonSPAreact/static/js/runtime-main.1711db48.js",
+    "runtime-main.js.map": "/PokemonSPAreact/static/js/runtime-main.1711db48.js.map",
+    "static/css/2.150d169a.chunk.css": "/PokemonSPAreact/static/css/2.150d169a.chunk.css",
+    "static/js/2.2ea02158.chunk.js": "/PokemonSPAreact/static/js/2.2ea02158.chunk.js",
+    "static/js/2.2ea02158.chunk.js.map": "/PokemonSPAreact/static/js/2.2ea02158.chunk.js.map",
+    "index.html": "/PokemonSPAreact/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/PokemonSPAreact/static/css/2.150d169a.chunk.css.map",
+    "static/js/2.2ea02158.chunk.js.LICENSE.txt": "/PokemonSPAreact/static/js/2.2ea02158.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1711db48.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.2ea02158.chunk.js",
+    "static/js/main.c4ffc501.chunk.js"
+  ]
+}
